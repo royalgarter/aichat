@@ -1,0 +1,10 @@
+name: aichat
+services:
+  aichat:
+    build: 
+      context: .
+    container_name: aichat
+    image: aichat
+    volumes:
+      - ./.mnt/config.yaml:/root/.config/aichat/config.yaml
+        
